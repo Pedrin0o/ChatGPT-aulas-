@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários de Aulas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="home">
+        <h1>Consultor de Aulas</h1>
+        <input type="text" id="pergunta" placeholder="Pergunte sobre as aulas...">
+        <button onclick="responder()">Perguntar</button>
+        <div id="resposta"></div>
+    </div>
+    
+    <div id="quarta" class="aula-tabela" style="display:none;">
+        <h2>Aulas de Quarta-feira:</h2>
+        <table>
+            <tr><th>Horário</th><th>Matéria</th></tr>
+            <tr><td>07:00 - 07:40</td><td>Física</td></tr>
+            <tr><td>07:50 - 08:40</td><td>Geografia</td></tr>
+            <tr><td>08:40 - 09:30</td><td>Química</td></tr>
+            <tr><td>09:30 - 09:50</td><td>Lanche</td></tr>
+            <tr><td>09:50 - 10:40</td><td>Biologia</td></tr>
+            <tr><td>10:40 - 11:30</td><td>Língua Portuguesa</td></tr>
+            <tr><td>11:30 - 12:20</td><td>Língua Portuguesa</td></tr>
+        </table>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+
+    <div id="quinta" class="aula-tabela" style="display:none;">
+        <h2>Aulas de Quinta-feira:</h2>
+        <table>
+            <tr><th>Horário</th><th>Matéria</th></tr>
+            <tr><td>07:00 - 07:40</td><td>Física</td></tr>
+            <tr><td>07:50 - 08:40</td><td>Língua Portuguesa</td></tr>
+            <tr><td>08:40 - 09:30</td><td>Língua Portuguesa</td></tr>
+            <tr><td>09:30 - 09:50</td><td>Lanche</td></tr>
+            <tr><td>09:50 - 10:40</td><td>Matemática</td></tr>
+            <tr><td>10:40 - 11:30</td><td>Matemática</td></tr>
+            <tr><td>11:30 - 12:20</td><td>Química</td></tr>
+        </table>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+
+    <div id="sexta" class="aula-tabela" style="display:none;">
+        <h2>Aulas de Sexta-feira:</h2>
+        <table>
+            <tr><th>Horário</th><th>Matéria</th></tr>
+            <tr><td>07:00 - 07:40</td><td>Matemática</td></tr>
+            <tr><td>07:50 - 08:40</td><td>Matemática</td></tr>
+            <tr><td>08:40 - 09:30</td><td>Biologia</td></tr>
+            <tr><td>09:30 - 09:50</td><td>Lanche</td></tr>
+            <tr><td>09:50 - 10:40</td><td>História</td></tr>
+            <tr><td>10:40 - 11:30</td><td>Inglês</td></tr>
+            <tr><td>11:30 - 12:20</td><td>Inglês</td></tr>
+        </table>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

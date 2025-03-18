@@ -1,0 +1,140 @@
+/* Definindo um estilo base para o corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Estilo para o contêiner da tela inicial */
+#home {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Estilo para o campo de entrada de pergunta */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Foco no campo de input */
+input[type="text"]:focus {
+    border-color: #0066cc;
+}
+
+/* Estilo para o botão de pergunta */
+button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover do botão */
+button:hover {
+    background-color: #004f99;
+}
+
+/* Estilo para a resposta */
+#resposta {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Estilo para as tabelas de aulas */
+.aula-tabela {
+    display: none;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.aula-tabela h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo para a tabela de horários */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f4f4f4;
+}
+
+/* Estilo para o botão de voltar */
+button:hover {
+    background-color: #004f99;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004f99;
+}
+
+/* Estilo para telas pequenas (responsividade) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #home {
+        width: 100%;
+    }
+
+    .aula-tabela {
+        width: 100%;
+    }
+}
